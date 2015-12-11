@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>youhui</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -19,46 +19,37 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+    </script>
     <!-- build:js scripts/picturefill.js -->
     <script src="scripts/picturefill.js" async></script>
     <!-- endbuild -->
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">登录注册</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a target="_blank" href="login.html">1-登录01</a></li>
-                            <li><a target="_blank" href="register.html">2-注册02</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">个人中心</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a target="_blank" href="user-center.html">用户中心</a></li>
-                            <li><a target="_blank" href="register.html">2-注册02</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<body class="page-login">
+    <div class="container-fluid">
+        <div class="brand">
+            <img srcset="images/p01.png 1x, images/p01@2x.png 2x" alt="…">
         </div>
+        <form>
+            <div class="form-group">
+                <label for="phone">手机号码</label>
+                <input type="text" class="form-control form-control-simple" id="phone" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" class="form-control form-control-simple" id="password" placeholder="">
+                <a class="extra" href="#">忘记密码？</a>
+            </div>
+            <button type="submit" class="btn btn-a btn-block">登录</button>
+            <p class="join">还没有成为优汇会员？ <strong>请注册</strong></p>
+        </form>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/picturefill/dist/picturefill.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.) scripts/plugins.js -->

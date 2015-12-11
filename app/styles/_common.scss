@@ -1,0 +1,55 @@
+.form-control-simple {
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #e8e8e9;
+    color: #333;
+    padding-left: 0;
+    padding-right: 0;
+    &:focus {
+        box-shadow: none;
+        border-color: $main-brand-color;
+    }
+}
+
+.title-bar {
+    position: relative;
+    .action-l {
+        position: absolute;
+        height: 100%;
+        left: 15px;
+        top: 0;
+        line-height: 40px;
+        .close {
+
+        }
+    }
+    .action-r {
+        position: absolute;
+        height: 100%;
+        right: 15px;
+        top: 0;
+        line-height: 40px;
+        font-size: 18px;
+        .logout {
+            color: $main-brand-color;
+            &:hover {
+                color: darken($main-brand-color, 15%);
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        color: #000;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    &.title-bar-fix-top {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #e8eaec;
+    }
+}

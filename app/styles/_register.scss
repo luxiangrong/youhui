@@ -1,0 +1,31 @@
+.page-register {
+    .avator-box {
+        text-align: center;
+        line-height: 30vh;
+        .avator {
+            display: inline-block;
+            position: relative;
+            line-height: 1;
+            .btn-b {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+            }
+        }
+    }
+    .form-group {
+        .extra {
+            i {
+            	font-style: normal;
+            	display: inline-block;
+            	width: 22px;
+            	height: 22px;
+            	line-height: 20px;
+            	font-size: 18px;
+            	border: 1px solid $main-text-color;
+            	border-radius: 11px;
+            	text-align: center;
+            }
+        }
+    }
+}

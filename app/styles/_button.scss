@@ -1,0 +1,28 @@
+//表单提交按钮
+.btn-a {
+	@include button-variant(#fff, $main-brand-color, $main-brand-color);
+	border-radius: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 53px;
+	font-size: 16px;
+}
+
+//圆形小按钮
+.btn-b {
+	@include button-variant(#fff, $main-brand-color, $main-brand-color);
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	line-height: 28px;
+}
+
+.btn-c {
+	@include button-variant(#009fe8, #fff, #c0c0c0);
+	border-radius: 17px;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	line-height: 33px;
+}

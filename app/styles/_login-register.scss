@@ -1,0 +1,61 @@
+.page-login,
+.page-register {
+    .brand {
+        text-align: center;
+        line-height: 45vh;
+    }
+    .form-group {
+        position: relative;
+        label {
+            color: $main-text-color;
+            font-weight: normal;
+        }
+        .extra {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            color: $main-text-color;
+        }
+    }
+    .join {
+    	text-align: center;
+    	margin: 15px 0;
+    	color: $main-text-color;
+    	strong {
+    		font-weight: normal;
+    		color: $main-brand-color;
+    	}
+    }
+}
+
+.page-register {
+    .avator-box {
+        text-align: center;
+        line-height: 40vh;
+        .avator {
+            display: inline-block;
+            position: relative;
+            line-height: 1;
+            .btn-b {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+            }
+        }
+    }
+    .form-group {
+        .extra {
+            i {
+                font-style: normal;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                line-height: 20px;
+                font-size: 18px;
+                border: 1px solid $main-text-color;
+                border-radius: 11px;
+                text-align: center;
+            }
+        }
+    }
+}
