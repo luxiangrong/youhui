@@ -1,3 +1,4 @@
+//会员中心
 .page-user-center {
 	background-color: #f5f5f5;
     .cover {
@@ -20,13 +21,13 @@
             }
             h5 {
                 color: #000;
-                font-size: 16px;
+                font-size: 1.6rem;
                 margin-top: 20px;
                 font-weight: normal;
             }
             .btn-edit {
                 margin-top: -80px;
-                font-size: 18px;
+                font-size: 1.8rem;
                 color: $main-brand-color;
                 &:hover {
                     color: darken($main-brand-color, 15%);
@@ -42,11 +43,96 @@
     		margin-bottom: 20px;
     		a {
     			color: #4a4a4a;
-    			font-size: 18px;
+    			font-size: 1.8rem;
     			&:hover {
     				color: lightern(#4a4a4a, 20%);
     			}
+                h5 {
+                    font-size: 1.45rem;
+                }
     		}
     	}
+    }
+}
+
+//会员收益
+.page-user-incoming {
+    background-color: #f5f5f5;
+    .total-incoming {
+        font-size: 1.45rem;
+        color: #4a4a4a;
+        line-height: 64px;
+        text-align: center;
+        background-color: #fff;
+        strong {
+            color: $main-brand-color;
+        }
+    }
+    .title-incoming {
+        line-height: 61px;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        h5 {
+            display: inline-block;
+            height: 100%;
+            font-weight: normal;
+            font-size: 1.6rem;
+            margin: 0;
+            line-height: 61px;
+        }
+        .switch-wrap {
+            font-size: 1.45rem;
+            color: #b2b2b2;
+            label {
+                font-weight: normal;
+                margin-right: 10px;
+            }
+        }
+    }
+    .table-wrap {
+        padding-bottom: 50px;
+        border-bottom: 1px solid $border-color;
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
+    .table-incoming {
+        margin-bottom: 0;
+        border-bottom: 1px solid $border-color;
+        .month,
+        .user {
+            .iconfont {
+                color: #ffb717;
+            }
+        }
+        .money {
+            .iconfont {
+                color: #185cce;
+            }
+        }
+        .status,
+        .commission {
+            .iconfont {
+                color: #3fc299;
+            }
+        }
+        th,td {
+            text-align: center;
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+        thead {
+            th {
+                font-weight: normal;
+                color: #333;
+                font-size: 1.45rem;
+                border-bottom: none;
+            }
+        }
+        tbody {
+            color: #b2b2b2;
+        }
+        .status-1 {
+            color: #3fc299;
+        }
     }
 }

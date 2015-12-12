@@ -30,44 +30,75 @@
     <!-- endbuild -->
 </head>
 
-<body class="page-register">
-    <section class="title-bar">
+<body class="page-user-incoming with-fixed-title-bar">
+    <section class="title-bar title-bar-fix-top">
         <div class="container-fluid">
             <div class="action-l">
-                <i class="iconfont">&#xe600;</i>
+                <a href="#" class="action"><i class="glyphicon glyphicon-chevron-left"></i>返回</a>
             </div>
-            <div class="title">注册</div>
-            <div class="action-r"></div>
+            <div class="title">我的收益</div>
+            <div class="action-r">
+                <a href="#" class="help">规则说明<span class="icon">?</span></a>
+            </div>
         </div>
     </section>
     <div class="container-fluid">
-        <div class="avator-box">
-            <a href="" class="avator">
-                <img src="images/p02.png" srcset="images/p02.png 1x, images/p02@2x.png 2x" alt="…">
-                <button class="btn btn-b"><i class="iconfont">&#xe601;</i></button>
-            </a>
+        <div class="row">
+            <div class="total-incoming">当前未结算收益：<strong>¥508</strong></div>
+            <div class="col-xs-12 title-incoming">
+                <h5 class="pull-left">收益记录</h5>
+                <div class="switch-wrap text-right">
+                    <label>查看柱状收益</label>
+                    <input type="checkbox" class="js-switch" />
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table class="table table-incoming">
+                    <thead>
+                        <tr>
+                            <th class="month"><i class="iconfont">&#xe602;</i>月份</th>
+                            <th class="money"><i class="iconfont">&#xe602;</i>金额</th>
+                            <th class="status"><i class="iconfont">&#xe602;</i>结算情况</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-0">未结算</td>
+                        </tr>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-1">已结算</td>
+                        </tr>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-1">已结算</td>
+                        </tr>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-1">已结算</td>
+                        </tr>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-1">已结算</td>
+                        </tr>
+                        <tr>
+                            <td>2015/09</td>
+                            <td>¥1000</td>
+                            <td class="status-1">已结算</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-12">
+                <a class="btn btn-d btn-block">查看收益明细</a>
+            </div>
         </div>
-        <form>
-            <div class="form-group">
-                <label for="phone">手机号码</label>
-                <input type="text" class="form-control form-control-simple" id="phone" placeholder="" value="188-8888-8888">
-                <a class="extra" href="#">发送验证码 <i>!</i></a>
-            </div>
-            <div class="form-group">
-                <label for="code">验证码／邀请码</label>
-                <input type="text" class="form-control form-control-simple" id="code" placeholder="" value="22364531">
-            </div>
-            <div class="form-group">
-                <label for="password">密码</label>
-                <input type="password" class="form-control form-control-simple" id="password" placeholder="" value="12345678">
-            </div>
-            <div class="form-group">
-                <label for="password">出生日期</label>
-                <input type="text" class="form-control form-control-simple" id="password" placeholder="" value="1985，05，05">
-            </div>
-            <button type="submit" class="btn btn-a btn-block">注册</button>
-            <p class="join">已经成为优汇会员？<strong>请登录</strong></p>
-        </form>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -97,6 +128,11 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
+    jQuery(function($) {
+        new Switchery($('.js-switch')[0], {
+            color: '#50d2c2'
+        });
+    });
     </script>
 </body>
 

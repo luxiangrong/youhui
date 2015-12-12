@@ -1,3 +1,39 @@
+html {
+    font-size: 9px
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    html {
+        font-size: 10px
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:414px) {
+    html {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:639px) {
+    html {
+        font-size: 15px
+    }
+}
+
+//让页面最大宽度固定在414px
+@media (min-width: 640px) {
+    .container-fluid {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+//简洁表单控件样式
 .form-control-simple {
     border-radius: 0px;
     border: none;
@@ -12,8 +48,10 @@
     }
 }
 
+//标题栏
 .title-bar {
     position: relative;
+    border-bottom: 1px solid #dddddd;
     .action-l {
         position: absolute;
         height: 100%;
@@ -21,7 +59,11 @@
         top: 0;
         line-height: 40px;
         .close {
-
+            
+        }
+        .action {
+            color: $main-brand-color;
+            font-size: 1.6rem;
         }
     }
     .action-r {
@@ -31,10 +73,28 @@
         top: 0;
         line-height: 40px;
         font-size: 18px;
-        .logout {
+        //主动作按钮
+        .action {
             color: $main-brand-color;
             &:hover {
                 color: darken($main-brand-color, 15%);
+            }
+        }
+        //帮助按钮
+        .help {
+            color: #b2b2b2;
+            font-size: 1.45rem;
+            .icon {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                line-height: 16px;
+                border: 1px solid $main-brand-color;
+                font-size: 1.3rem;
+                border-radius: 9px;
+                text-align: center;
+                color: $main-brand-color;
+                margin-left: 5px;
             }
         }
     }
@@ -52,4 +112,7 @@
         right: 0;
         background-color: #e8eaec;
     }
+}
+.with-fixed-title-bar {
+    padding-top: 40px;
 }

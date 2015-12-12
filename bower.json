@@ -4,7 +4,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
-    "picturefill": "~3.0.1"
+    "picturefill": "~3.0.1",
+    "switchery": "~0.8.1",
+    "Swiper": "swiper#~3.2.7"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -12,6 +14,12 @@
         "assets/stylesheets/_bootstrap.scss",
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "Swiper": {
+      "main": [
+        "dist/js/swiper.jquery.js",
+        "dist/css/swiper.css"
       ]
     }
   }

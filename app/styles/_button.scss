@@ -5,7 +5,7 @@
 	padding-top: 0;
 	padding-bottom: 0;
 	line-height: 53px;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 //圆形小按钮
@@ -25,4 +25,14 @@
 	height: 35px;
 	padding: 0;
 	line-height: 33px;
+}
+
+
+.btn-d {
+	@include button-variant(#fff, $main-brand-color, $main-brand-color);
+	border-radius: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 44px;
+	font-size: 1.6rem;
 }
