@@ -1,0 +1,254 @@
+.page-comment {
+    background-color: #f5f5f5;
+
+    //产品展示区域
+    .row-product {
+        background-color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .media {
+            .media-body {
+                h4 {
+                    font-weight: normal;
+                    color: #4a4a4a;
+                    font-size: 1.45rem;
+                    margin-top: 0;
+                }
+                p {
+                    font-size: 1.45rem;
+                    color: #b2b2b2;
+                }
+                .price {
+                    font-weight: normal;
+                    color: #4a4a4a;
+                    font-size: 1.45rem;
+                }
+            }
+        }
+    }
+    //评价/评论样式
+    .row-comment {
+    	padding-bottom: 25px;
+    	.comment-star {
+    		li {
+    			line-height: 48px;
+    			span.name {
+    				padding: 0 1rem;
+    				font-size: 1.45rem;
+    			}
+    			span.stars {
+    				.iconfont {
+    					font-size: 22px;
+    					color: #fe7900;
+    				}
+    			}
+    		}
+    	}
+    	textarea.form-control {
+    		border-radius: 0px;
+    	}
+    }
+}
+
+.page-product {
+    .stars {
+        .iconfont {
+            color: #cbcbcb;
+            &.active {
+                color: #fe7900;
+            }
+        }
+    }
+    .base-info {
+        margin: 15px 0;
+        h5 {
+            font-weight: normal;
+            color: #424242;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        .comment-count {
+            color: #cbcbcb;
+        }
+        .price {
+            font-size: 1.9rem;
+            color: #515253;
+            margin-top: -5px
+        }
+    }
+    .action {
+        margin-top: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+        .btn-e {
+             line-height: 40px;
+            .iconfont {
+                font-size: 2rem;
+            }
+            &.active {
+                .iconfont {
+                    color: $main-brand-color;
+                }
+            }
+        }
+        .btn-d {
+            border-radius: 22px;
+            line-height: 40px;
+        }
+        .col-favorite,
+        .col-number,
+        .col-cart {
+            padding: 5px;
+        }
+        .col-favorite {
+            width: 20%;
+        }
+        .col-number {
+            width: 45%;
+        }
+        .col-cart {
+            width: 35%;
+        }
+        .number-wrap {
+            vertical-align: middle;
+            position: relative;
+            .minus,
+            .plus {
+                @include button-variant(#ffffff, #e3e3e3, #e3e3e3);
+                padding: 0;
+                width: 40px;
+                line-height: 42px;
+                border-radius: 0px;
+                font-size: 1.8rem;
+                vertical-align: middle;
+                vertical-align: middle;
+                height: 44px;
+                position: absolute;
+            }
+            .minus {
+                top: 0;
+                left: 0;
+            }
+            .plus {
+                top: 0;
+                right: 0;
+            }
+            .number {
+                border: 1px solid #e3e3e3;
+                border-radius: 0px;
+                box-shadow: none;
+                width: 100%;
+                padding: 0;
+                -webkit-appearance: none;
+                text-align: center;
+                vertical-align: middle;
+                height: 44px;
+                padding-left: 44px;
+                padding-right: 44px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+    .panel-collapse {
+        margin-bottom: 0;
+        box-shadow: none;
+        .panel-heading {
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 1.6rem;
+            border-bottom: 1px solid #eee;
+            a {
+                display: block;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 1.6rem;
+                font-weight: normal;
+                &[aria-expanded=true] {
+                    .glyphicon-chevron-down {
+                        display: none;
+                    }
+                    .glyphicon-chevron-up {
+                        display: inline;
+                    }
+                }
+                &[aria-expanded=false] {
+                    .glyphicon-chevron-down {
+                        display: inline;
+                    }
+                    .glyphicon-chevron-up {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .panel-body {
+            border-bottom: 1px solid #eee;
+        }
+        #product-specifications {
+            .panel-body {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            table {
+                margin-bottom: 0;
+                th,td {
+                    font-weight: normal;
+                    color: #b2b2b2
+                }
+                th {
+                    border-right: 1px solid #eee;
+                }
+            }
+        }
+    }
+    .recommend-product {
+        margin-top: 15px;
+        .title {
+            color: #a1bc8e;
+            font-weight: normal;
+        }
+        .swiper-slide {
+            width: 25%;
+            .img-responsive {
+                border: 1px solid #eee;
+            }
+            .name {
+                color: #333;
+                text-align: center;
+                padding: 0 3px;
+                text-overflow:ellipsis;
+                width:8em; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;
+                font-size: 1.2rem;
+                padding-top: 5px;
+            }
+            .price {
+                color: #eb5355;
+                text-align: center;
+            }
+        }
+    }
+    .quick-nav {
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+        width: 40px;
+        z-index: 999;
+        li {
+            a {
+                color: #4a4a4a;
+                text-shadow: 3px 3px 2px #aaa;
+                .iconfont {
+                    font-size: 2.5rem;
+                    &.active {
+                        color: $main-brand-color;
+                    }
+                }
+            }
+        }
+    }
+}

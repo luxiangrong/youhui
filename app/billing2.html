@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>youhui</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/switchery/dist/switchery.css" />
+    <link rel="stylesheet" href="/bower_components/Swiper/dist/css/swiper.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+    </script>
+    <!-- build:js scripts/picturefill.js -->
+    <script src="scripts/picturefill.js" async></script>
+    <!-- endbuild -->
+</head>
+
+<body class="page-billing with-fixed-title-bar">
+    <section class="title-bar title-bar-fix-top">
+        <div class="container-fluid">
+            <div class="action-l">
+                <a href="#" class="action"><i class="glyphicon glyphicon-chevron-left"></i>返回</a>
+            </div>
+            <div class="title">生成订单</div>
+            <div class="action-r">
+                <a href="#" class="action">取消</a>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <div class="panel panel-billing">
+            <div class="panel-body">
+                <span class="name">Louis Greene</span>
+                <span class="phone">186-8888-8888</span>
+                <br/>
+                <span class="address">北京市朝阳区东四环北路88号x楼x单元xxx</span>
+            </div>
+            <a href="#" class="edit">编辑</a>
+        </div>
+        <div class="panel panel-billing">
+            <div class="panel-heading">订单中商品</div>
+            <div class="panel-body">
+                <div class="row row-product">
+                    <div class="col-xs-3 col-product">
+                        <a href="#"><img src="images/j05.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-xs-3 col-product">
+                        <a href="#"><img src="images/j06.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-xs-3 col-product">
+                        <a href="#"><img src="images/j07.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                    <div class="col-xs-3 col-product">
+                        <a href="#"><img src="images/j08.jpg" alt="" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="edit">编辑</a>
+        </div>
+        <div class="panel panel-billing no-border">
+            <div class="panel-heading with-border"><a data-toggle="collapse" href="#fapiao" class="handler"><i class="glyphicon glyphicon-chevron-down pull-right"></i>发票信息</a></div>
+            <div class="panel-body collapse " id="fapiao">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea name="" id="" rows="2" class="form-control form-control-a"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-billing no-border">
+            <div class="panel-heading with-border"><a data-toggle="collapse" href="#liuyan" class="handler"><i class="glyphicon glyphicon-chevron-down pull-right"></i>留言备注</a></div>
+            <div class="panel-body collapse " id="liuyan">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea name="" id="" rows="2" class="form-control form-control-a"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-billing">
+            <div class="panel-heading with-border"><a data-toggle="collapse" href="#fukuan" class="handler"><i class="glyphicon glyphicon-chevron-up pull-right"></i>付款方式</a></div>
+            <div class="panel-body collapse in" id="fukuan">
+                <ul class="list-inline pay-method">
+                    <li class=""><i class="iconfont">&#xe607;</i>
+                        <p>支付宝</p>
+                    </li>
+                    <li class=""><i class="iconfont">&#xe606;</i>
+                        <p>微信支付</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-billing">
+            <div class="panel-body "><a href="#" class="price pull-right">¥72</a><span class="label">商品价格</span></div>
+        </div>
+        <div class="panel panel-billing">
+            <div class="panel-body "><a href="#" class="price pull-right">¥12</a><span class="label">快递费用</span></div>
+        </div>
+        <div class="panel panel-billing">
+            <div class="panel-body "><a href="#" class="price pull-right">¥82</a><span class="label">共计</span></div>
+        </div>
+        <div class="panel panel-billing no-border">
+            <div class="panel-body"><button class="btn btn-d btn-block">确定结算</button></div>
+        </div>
+    </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/picturefill/dist/picturefill.js"></script>
+    <script src="/bower_components/transitionize/dist/transitionize.js"></script>
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="/bower_components/switchery/dist/switchery.js"></script>
+    <script src="/bower_components/Swiper/dist/js/swiper.jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script>
+    jQuery(function($) {
+        $('.collapse').on('show.bs.collapse', function (a) {
+          $(this).closest('.panel-billing').find('.glyphicon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+          $(this).closest('.panel-billing').removeClass('no-border');
+        });
+        $('.collapse').on('hide.bs.collapse', function (a) {
+          $(this).closest('.panel-billing').find('.glyphicon').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+          $(this).closest('.panel-billing').addClass('no-border');
+        });
+        $('.pay-method li').on('click', function(){
+            $(this).closest('.pay-method').find('li').removeClass('selected');
+            $(this).addClass('selected');
+        });
+    });
+    </script>
+</body>
+
+</html>

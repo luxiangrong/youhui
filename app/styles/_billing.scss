@@ -1,0 +1,97 @@
+.page-billing {
+    .panel-billing {
+        position: relative;
+        border-radius: 0px;
+        margin-left: - $grid-gutter-width / 2;
+        margin-right: - $grid-gutter-width / 2;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #eee;
+        box-shadow: none;
+        &.no-border {
+        	border: none;
+        	border-bottom: none;
+        }
+        .panel-body {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .label {
+            	color: #b2b2b2;
+            }
+            .price {
+            	color: #515253;
+            }
+            &.collapse {
+            	padding-top: 0px;
+            	padding-bottom: 0px;
+            	.col-xs-12 {
+            		padding-top: 15px;
+            		padding-bottom: 15px;
+            	}
+            }
+            &.collapsing {
+            	padding-top: 0px;
+            	padding-bottom: 0px;
+            	.col-xs-12 {
+            		padding-top: 15px;
+            		padding-bottom: 15px;
+            	}
+            }
+        }
+        .panel-heading {
+            padding-bottom: 0px;
+            &.with-border {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #eee;
+            }
+            .handler {
+            	display: block;
+            	color: #515253;
+            }
+        }
+        .form-control-a {}
+        .edit {
+            position: absolute;
+            top: 5px;
+            right: $grid-gutter-width / 2;
+            font-size: 1.5rem;
+            color: $main-brand-color;
+        }
+        .name {
+            font-size: 1.6rem;
+            color: #515253;
+        }
+        .phone,
+        .address {
+            font-size: 1.45rem;
+            color: #b2b2b2;
+        }
+        .row-product {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .col-product {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .pay-method {
+            > li {
+                text-align: center;
+                color: #acb2ac;
+                .iconfont {
+                    font-size: 4.8rem;
+                    color: #515253;
+                }
+                &.selected {
+                	color: #00aaee;
+                	.iconfont {
+                		color: #00aaee;
+                	}
+                }
+            }
+        }
+    }
+}

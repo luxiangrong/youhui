@@ -30,78 +30,73 @@
     <!-- endbuild -->
 </head>
 
-<body class="page-user-incoming with-fixed-title-bar">
+<body class="page-order page-order-success with-fixed-title-bar">
     <section class="title-bar title-bar-fix-top">
         <div class="container-fluid">
             <div class="action-l">
-                <a href="#" class="action"><i class="glyphicon glyphicon-chevron-left"></i>返回</a>
             </div>
-            <div class="title">我的收益</div>
+            <div class="title">支付成功</div>
             <div class="action-r">
-                <a href="#" class="help">规则说明<span class="icon">?</span></a>
             </div>
         </div>
     </section>
     <div class="container-fluid">
         <div class="row">
-            <div class="total-incoming">当前未结算收益：<strong>¥508</strong></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 title-incoming">
-                <h5 class="pull-left">收益记录</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="table-wrap clearfix">
-                <table class="table table-incoming">
-                    <thead>
-                        <tr>
-                            <th class="user"><i class="iconfont">&#xe602;</i>月份</th>
-                            <th class="money"><i class="iconfont">&#xe602;</i>金额</th>
-                            <th class="commission"><i class="iconfont">&#xe602;</i>提成</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-xs-12">
-                <a class="btn btn-d btn-block">查看收益记录</a>
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="border">
+                            <span class="name">Louis Greene</span>
+                            <span class="content">186-8888-8888</span>
+                            <br/>
+                            <span class="content">北京市朝阳区东四环北路88号x楼x单元xxx</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border">
+                            <h5>订单编号：W88888888</h5>
+                            <div class="row row-product">
+                                <div class="col-xs-3 col-product">
+                                    <a href="#"><img src="images/j05.jpg" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3 col-product">
+                                    <a href="#"><img src="images/j06.jpg" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3 col-product">
+                                    <a href="#"><img src="images/j07.jpg" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="col-xs-3 col-product">
+                                    <a href="#"><img src="images/j08.jpg" alt="" class="img-responsive"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border">
+                            发票信息：<span class="content">背景某某有限公司</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="border">留言备注：<span class="content">无</span></div>
+                    </li>
+                    <li>
+                        <div class="border">付款方式：<span class="content">支付宝付款</span></div>
+                    </li>
+                    <li>
+                        <div class="border">订单金额：<span class="content">¥82</span></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+    <section class="clearing-box fixed-bottom">
+        <div class="container-fluid btn-wrap">
+            <div class="content">
+            	<button class="btn btn-f btn-block">取消订单</button>
+                <button class="btn btn-d btn-block">完成</button>
+            </div>
+        </div>
+    </section>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -130,8 +125,7 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
-    jQuery(function($) {
-    });
+    jQuery(function($) {});
     </script>
 </body>
 

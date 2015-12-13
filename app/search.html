@@ -30,83 +30,26 @@
     <!-- endbuild -->
 </head>
 
-<body class="page-home">
-    <section class="hot-tags">
+<body class="page-search with-fixed-title-bar">
+    <section class="search-bar search-bar-fix-top">
         <div class="container-fluid">
-            <div class="row">
-                <div class="swiper-container tag-swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a class="tag tag-1">农产品</a></div>
-                        <div class="swiper-slide"><a class="tag tag-2">旅游</a></div>
-                        <div class="swiper-slide"><a class="tag tag-3">理财</a></div>
-                        <div class="swiper-slide"><a class="tag tag-4">电子产品</a></div>
-                        <div class="swiper-slide"><a class="tag tag-1">农产品</a></div>
-                        <div class="swiper-slide"><a class="tag tag-2">旅游</a></div>
-                        <div class="swiper-slide"><a class="tag tag-3">理财</a></div>
-                        <div class="swiper-slide"><a class="tag tag-4">电子产品</a></div>
-                        <div class="swiper-slide"><a class="tag tag-1">农产品</a></div>
-                        <div class="swiper-slide"><a class="tag tag-2">旅游</a></div>
-                        <div class="swiper-slide"><a class="tag tag-3">理财</a></div>
-                        <div class="swiper-slide"><a class="tag tag-4">电子产品</a></div>
-                    </div>
-                </div>
+            <div class="action-l">
+                <a href="#" class="action"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            </div>
+            <div class="form-group form-group-search has-feedback">
+                <input type="text" class="form-control" id="" placeholder="输入关键词搜索">
+                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
             </div>
         </div>
     </section>
-    <section class="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="swiper-container banner-swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="" class=""><img class="img-responsive" src="images/j02.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class=""><img class="img-responsive" src="images/j02.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class=""><img class="img-responsive" src="images/j02.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="promotion">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-3">
-                    <div class="square">
-                        <a href="#">
-                            <img class="img-responsive" src="images/p10.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="square">
-                        <a href="#">
-                            <img class="img-responsive" src="images/p10.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="square">
-                        <a href="#">
-                            <img class="img-responsive" src="images/p10.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="square">
-                        <a href="#">
-                            <img class="img-responsive" src="images/p10.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container-fluid">
+        <ul class="nav nav-pills">
+            <li class="nav-item-1"><a href="#">综合</a></li>
+            <li class="nav-item-2"><a href="#">销量</a></li>
+            <li class="nav-item-3"><a href="#">评价</a></li>
+            <li class="nav-item-4"><a href="#">筛选</a></li>
+        </ul>
+    </div>
     <section class="products">
         <div class="container-fluid">
             <div class="media tag-1">
@@ -228,13 +171,6 @@
             freeMode: true,
             slidesPerView: 'auto',
             spaceBetween: 10
-        });
-        var bannerSwiper = new Swiper('.banner-swiper-container', {
-            slidesPerView: '1',
-            loop: true,
-            // 如果需要分页器
-            pagination: '.swiper-pagination',
-            autoplay: 5000
         });
     });
     </script>

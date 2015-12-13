@@ -30,77 +30,45 @@
     <!-- endbuild -->
 </head>
 
-<body class="page-user-incoming with-fixed-title-bar">
+<body class="page-user-address with-fixed-title-bar">
     <section class="title-bar title-bar-fix-top">
         <div class="container-fluid">
             <div class="action-l">
                 <a href="#" class="action"><i class="glyphicon glyphicon-chevron-left"></i>返回</a>
             </div>
-            <div class="title">我的收益</div>
+            <div class="title">地址详情</div>
             <div class="action-r">
-                <a href="#" class="help">规则说明<span class="icon">?</span></a>
+                <a href="#" class="action">跳过</a>
             </div>
         </div>
     </section>
     <div class="container-fluid">
-        <div class="row">
-            <div class="total-incoming">当前未结算收益：<strong>¥508</strong></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 title-incoming">
-                <h5 class="pull-left">收益记录</h5>
+        <form>
+            <h5>收货地址</h5>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="姓名">
             </div>
-        </div>
-        <div class="row">
-            <div class="table-wrap clearfix">
-                <table class="table table-incoming">
-                    <thead>
-                        <tr>
-                            <th class="user"><i class="iconfont">&#xe602;</i>月份</th>
-                            <th class="money"><i class="iconfont">&#xe602;</i>金额</th>
-                            <th class="commission"><i class="iconfont">&#xe602;</i>提成</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                        <tr>
-                            <td>**1027**</td>
-                            <td>¥1000</td>
-                            <td>¥30</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="性别（选填）">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <a class="btn btn-d btn-block">查看收益记录</a>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="城市">
             </div>
-        </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="区域">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="详细地址">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="邮政编码（选填）">
+            </div>
+            <h5>联系方式</h5>
+            <div class="form-group">
+                <input type="text" class="form-control form-control-a" id="" placeholder="手机号码">
+            </div>
+            <button type="submit" class="btn btn-block btn-e">保存</button>
+        </form>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -130,8 +98,7 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
-    jQuery(function($) {
-    });
+    jQuery(function($) {});
     </script>
 </body>
 

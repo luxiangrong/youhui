@@ -48,6 +48,21 @@ body {
     }
 }
 
+.form-control-a {
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    background-color: #eeeeee;
+    color: #333;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    height: 45px;
+    &:focus {
+        box-shadow: none;
+        border-color: $main-brand-color;
+    }
+}
+
 //标题栏
 .title-bar {
     position: relative;
@@ -58,12 +73,13 @@ body {
         left: 15px;
         top: 0;
         line-height: 40px;
-        .close {
-            
-        }
+        .close {}
         .action {
             color: $main-brand-color;
             font-size: 1.6rem;
+            i.glyphicon-chevron-left {
+                top: 2px;
+            }
         }
     }
     .action-r {
@@ -72,7 +88,7 @@ body {
         right: 15px;
         top: 0;
         line-height: 40px;
-        font-size: 18px;
+        font-size: 1.6rem;
         //主动作按钮
         .action {
             color: $main-brand-color;
@@ -113,6 +129,46 @@ body {
         background-color: #e8eaec;
     }
 }
+
+.search-bar {
+    position: relative;
+    padding-top: 5px;
+    .action-l {
+        position: absolute;
+        height: 100%;
+        left: 15px;
+        top: 0;
+        line-height: 40px;
+        .close {}
+        .action {
+            color: $main-brand-color;
+            font-size: 1.6rem;
+            i.glyphicon-chevron-left {
+                top: 2px;
+            }
+        }
+    }
+    .form-group-search  {
+        margin-left: 32px;
+        .form-control {
+            border-radius:16px;
+            background-color: #eeeeee;
+            border: none;
+            text-align: center;
+            &:focus {
+                text-align: left;
+            }
+        }
+    }
+    &.search-bar-fix-top {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
 .with-fixed-title-bar {
     padding-top: 40px;
 }

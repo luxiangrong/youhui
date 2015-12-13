@@ -36,3 +36,23 @@
 	line-height: 44px;
 	font-size: 1.6rem;
 }
+
+//灰底白字按钮
+.btn-e {
+	@include button-variant(#fff, #515253, #515253);
+	border-radius: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 44px;
+	font-size: 1.6rem;
+}
+
+.btn-f {
+	@include button-variant(#fff, #8e8e92, #8e8e92);
+	border-radius: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 44px;
+	font-size: 1.6rem;
+}
+
