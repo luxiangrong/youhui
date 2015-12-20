@@ -33,6 +33,22 @@ body {
     padding-bottom: 20px;
 }
 
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    transition: transform 300ms linear;
+    transform: translateY(0%);
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
 //简洁表单控件样式
 .form-control-simple {
     border-radius: 0px;

@@ -1,9 +1,15 @@
 .page-home,
 .page-search {
+    padding-top: 42px;
     //顶部热门标签
     .hot-tags {
-        background-color: #fff;
+        background-color: rgba(255,255,255,0.8);
         padding: 5px 0;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        left: 0;
+        right: 0;
         .swiper-slide {
             display: inline-block;
             width: auto;
@@ -114,6 +120,13 @@
 }
 
 .page-search {
+    padding-top: 38px;
+    .search-bar {
+        background-color: rgba(255,255,255,0.8);
+        .form-group {
+            margin-bottom: 5px;
+        }
+    }
     .nav-pills {
         margin-top: 15px;
         margin-bottom: 15px;

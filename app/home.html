@@ -112,7 +112,7 @@
             <div class="media tag-1">
                 <div class="media-left media-middle">
                     <a href="#">
-                        <img class="media-object" src="" srcset="images/j03@2x.jpg 2x" alt="...">
+                        <img class="media-object" src="images/j03.jpg" height="109" width="108" srcset="images/j03@2x.jpg 2x" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
@@ -133,7 +133,7 @@
             <div class="media tag-2">
                 <div class="media-left media-middle">
                     <a href="#">
-                        <img class="media-object" src="" srcset="images/j03@2x.jpg 2x" alt="...">
+                        <img class="media-object" src="images/j03.jpg" height="109" width="108" srcset="images/j03@2x.jpg 2x" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
@@ -154,7 +154,7 @@
             <div class="media tag-3">
                 <div class="media-left media-middle">
                     <a href="#">
-                        <img class="media-object" src="" srcset="images/j03@2x.jpg 2x" alt="...">
+                        <img class="media-object" src="images/j03.jpg" height="109" width="108" srcset="images/j03@2x.jpg 2x" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
@@ -175,7 +175,7 @@
             <div class="media tag-4">
                 <div class="media-left media-middle">
                     <a href="#">
-                        <img class="media-object" src="" srcset="images/j03@2x.jpg 2x" alt="...">
+                        <img class="media-object" src="images/j03.jpg" height="109" width="108" srcset="images/j03@2x.jpg 2x" alt="...">
                     </a>
                 </div>
                 <div class="media-body">
@@ -203,6 +203,8 @@
     <script src="/bower_components/fastclick/lib/fastclick.js"></script>
     <script src="/bower_components/switchery/dist/switchery.js"></script>
     <script src="/bower_components/Swiper/dist/js/swiper.jquery.js"></script>
+    <script src="/bower_components/headroom.js/dist/headroom.js"></script>
+    <script src="/bower_components/headroom.js/dist/jQuery.headroom.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.) scripts/plugins.js -->
@@ -236,6 +238,8 @@
             pagination: '.swiper-pagination',
             autoplay: 5000
         });
+
+        $(".hot-tags").headroom();
     });
     </script>
 </body>
