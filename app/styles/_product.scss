@@ -51,6 +51,7 @@
 }
 
 .page-product {
+    padding-bottom: 50px;
     .stars {
         .iconfont {
             color: #cbcbcb;
@@ -77,11 +78,12 @@
         }
     }
     .action {
-        margin-top: 15px;
-        margin-left: -10px;
-        margin-right: -10px;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 15px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255,255,255,0.9);
+        z-index: 100;
         .btn-e {
              line-height: 40px;
             .iconfont {
@@ -206,6 +208,32 @@
             }
         }
     }
+    .comment-wrap {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        .row-1 {
+            margin-bottom: 5px;
+            .name {
+                color: #b2b2b2;
+            }
+        }
+        .row-3 {
+            padding-left: 10px;
+            padding-right: 10px;
+            .col-xs-3 {
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+        }
+        .row-4 {
+            margin-top: 5px;
+            
+            .date {
+                color: #b2b2b2;
+            }
+        }
+    }
     .recommend-product {
         margin-top: 15px;
         .title {
@@ -234,7 +262,7 @@
     }
     .quick-nav {
         position: fixed;
-        bottom: 30px;
+        bottom: 50px;
         right: 0px;
         width: 40px;
         z-index: 999;
