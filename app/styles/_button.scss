@@ -63,10 +63,23 @@
 	padding-bottom: 0;
 	line-height: 20px;
 	font-size: 1.2rem;
+	padding-left: 15px;
+	padding-right: 15px;
+	&:hover,&:active {
+		border-color: #50d2c2;
+		background-color: #fff;
+		box-shadow: none;
+	}
 	&.active {
 		border-color: #50d2c2;
 		background-color: #fff;
 		box-shadow: none;
+		&:active,
+		&:hover{
+			border-color: #50d2c2;
+			background-color: #fff;
+			box-shadow: none;
+		}
 	}
 }
 
