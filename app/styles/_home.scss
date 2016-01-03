@@ -3,7 +3,7 @@
     padding-top: 42px;
     //顶部热门标签
     .hot-tags {
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         padding: 5px 0;
         position: fixed;
         top: 0px;
@@ -55,9 +55,17 @@
             padding-right: 5px;
         }
         .square {
+            width: calc(25% - 3px);
+            padding-bottom: 25%;
+            display: inline-block;
+            font-size: 0px;
+            text-align: center;
+            vertical-align: middle;
+            margin-bottom: -25%;
             img {
-                max-width: 100%;
-                max-height: 100%;
+                vertical-align: middle;
+                max-height: calc(25vw - 10px);
+                margin: 0 auto;
             }
         }
     }
@@ -79,10 +87,16 @@
                 background-color: #eeeeee;
             }
             .media-left {
-                img {
-                    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
-                    max-width: 108px;
-                    max-height: 108px;
+                a {
+                    width: 108px;
+                    overflow: hidden;
+                    display: block;
+                    img {
+                        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+                        max-width: 108px;
+                        max-height: 108px;
+                        margin: 0 auto;
+                    }
                 }
             }
             .media-body {
@@ -130,7 +144,7 @@
 .page-search {
     padding-top: 38px;
     .search-bar {
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         .form-group {
             margin-bottom: 5px;
         }
