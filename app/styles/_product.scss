@@ -1,5 +1,6 @@
 .page-comment {
     background-color: #f5f5f5;
+    
 
     //产品展示区域
     .row-product {
@@ -77,7 +78,7 @@
             margin-top: -5px
         }
     }
-    .action {
+    > .action {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -97,21 +98,22 @@
         }
         .btn-d {
             border-radius: 22px;
-            line-height: 40px;
+            line-height: 44px;
         }
         .col-favorite,
         .col-number,
         .col-cart {
             padding: 5px;
+            .btn {
+                border-radius: 0px;
+            }
         }
         .col-favorite {
             width: 20%;
         }
         .col-number {
-            width: 45%;
         }
         .col-cart {
-            width: 35%;
         }
         .number-wrap {
             vertical-align: middle;
@@ -154,6 +156,13 @@
             }
         }
     }
+    .product-swiper-container {
+        img.img-responsive {
+            max-height: 125px;
+            margin: 0 auto;
+        }
+    }
+
     .panel-collapse {
         margin-bottom: 0;
         box-shadow: none;
@@ -224,6 +233,11 @@
                 padding-left: 5px;
                 padding-right: 5px;
                 margin-top: 10px;
+            }
+            .col-product {
+                img.img-responsive {
+                    max-height: 124px;
+                }
             }
         }
         .row-4 {
