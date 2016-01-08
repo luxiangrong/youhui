@@ -12,7 +12,9 @@
             top: -62px;
             text-align: center;
             margin-bottom: -40px;
-            img {}
+            img {
+                box-shadow: 0 1px 5px 1px rgba(100,100,100,0.5);
+            }
             .btn-c {
                 position: absolute;
                 top: 90px;

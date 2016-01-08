@@ -18,13 +18,29 @@
         }
     }
     .join {
-    	text-align: center;
-    	margin: 15px 0;
-    	color: $main-text-color;
-    	strong {
-    		font-weight: normal;
-    		color: $main-brand-color;
-    	}
+        text-align: center;
+        margin: 15px 0;
+        color: $main-text-color;
+        strong {
+            font-weight: normal;
+            color: $main-brand-color;
+        }
+    }
+    .form-control {
+        // Firefox
+        &::-moz-placeholder {
+            color: #bbbbbb;
+            opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+            font-size: 1.2rem;
+        }
+        &:-ms-input-placeholder {
+            color: #bbbbbb;
+            font-size: 1.2rem;
+        } // Internet Explorer 10+
+        &::-webkit-input-placeholder {
+            color: #bbbbbb;
+            font-size: 1.2rem;
+        } // Safari and Chrome
     }
 }
 

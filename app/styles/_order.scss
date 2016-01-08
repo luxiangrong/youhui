@@ -23,7 +23,9 @@
                 font-size: 3rem;
             }
             .label {
-                display: none;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 8px;
             }
             &.active {
                 color: $main-brand-color;
@@ -33,9 +35,6 @@
                     display: inline;
                     color: #fff;
                     font-size: 1rem;
-                    border-radius: 8px;
-                    padding-left: 15px;
-                    padding-right: 15px;
                 }
             }
         }

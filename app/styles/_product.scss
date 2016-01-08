@@ -276,10 +276,11 @@
     }
     .quick-nav {
         position: fixed;
-        bottom: 50px;
         right: 0px;
         width: 40px;
         z-index: 999;
+        top: 50%;
+        transform: translateY(-50%);
         li {
             a {
                 color: #4a4a4a;
