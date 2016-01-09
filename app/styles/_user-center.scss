@@ -14,6 +14,7 @@
             margin-bottom: -40px;
             img {
                 box-shadow: 0 1px 5px 1px rgba(100,100,100,0.5);
+                border: 1px solid #bbb;
             }
             .btn-c {
                 position: absolute;
@@ -46,11 +47,28 @@
     		a {
     			color: #4a4a4a;
     			font-size: 1.8rem;
+                display: block;
+                position: relative;
     			&:hover {
     				color: lightern(#4a4a4a, 20%);
     			}
                 h5 {
                     font-size: 1.45rem;
+                }
+                .badge {
+                    background-color: $main-brand-color;
+                    color: #fff;
+                    position: absolute;
+                    top: -5px;
+                    left: 50%;
+                    margin-left: 10px;
+                    font-size: 1.2rem;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    padding: 0;
+                    line-height: 20px;
+                    text-align: center;
                 }
     		}
     	}

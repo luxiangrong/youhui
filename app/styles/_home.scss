@@ -64,8 +64,11 @@
             margin-bottom: -25%;
             img {
                 vertical-align: middle;
-                max-height: calc(25vw - 10px);
                 margin: 0 auto;
+                max-height: calc(25vw - 15.25px);
+                overflow: hidden;
+                padding: 1px;
+                box-shadow: 0 1px 1px 1px rgba(100, 100, 100, 0.2), 0 -1px 1px 1px rgba(100, 100, 100, 0.2);
             }
         }
     }
@@ -90,6 +93,7 @@
             }
             &.media-single {
                 overflow: hidden;
+                padding: 0px;
                 a {
                     display: block;
                     height: 100%;
@@ -97,7 +101,7 @@
                     overflow: hidden;
                 }
                 img {
-                    height: 100px;
+                    height: 123px;
                     width: auto;
                 }
             }
