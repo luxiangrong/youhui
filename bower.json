@@ -1,37 +1,38 @@
 {
-    "name": "youhui",
-    "private": true,
-    "dependencies": {
-        "bootstrap-sass": "~3.3.5",
-        "modernizr": "~2.8.3",
-        "picturefill": "~3.0.1",
-        "switchery": "~0.8.1",
-        "Swiper": "swiper#~3.2.7",
-        "headroom.js": "~0.7.0",
-        "jquery.event.swipe": "~0.5.4"
+  "name": "youhui",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.3",
+    "picturefill": "~3.0.1",
+    "switchery": "~0.8.1",
+    "Swiper": "swiper#~3.2.7",
+    "headroom.js": "~0.7.0",
+    "jquery.event.swipe": "~0.5.4",
+    "dropload": "^0.9.0"
+  },
+  "overrides": {
+    "headroom.js": {
+      "main": [
+        "dist/headroom.js",
+        "dist/jQuery.headroom.js"
+      ]
     },
-    "overrides": {
-        "headroom.js": {
-            "main": [
-                "dist/headroom.js",
-                "dist/jQuery.headroom.js"
-            ]
-        },
-        "bootstrap-sass": {
-            "main": [
-                "assets/fonts/bootstrap/*"
-            ]
-        },
-        "jquery.event.move": {
-            "main": [
-                "js/jquery.event.move.js"
-            ]
-        },
-        "Swiper": {
-            "main": [
-                "dist/js/swiper.jquery.js",
-                "dist/css/swiper.css"
-            ]
-        }
+    "bootstrap-sass": {
+      "main": [
+        "assets/fonts/bootstrap/*"
+      ]
+    },
+    "jquery.event.move": {
+      "main": [
+        "js/jquery.event.move.js"
+      ]
+    },
+    "Swiper": {
+      "main": [
+        "dist/js/swiper.jquery.js",
+        "dist/css/swiper.css"
+      ]
     }
+  }
 }

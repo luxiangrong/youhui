@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js pullload" lang="">
 
 <head>
     <meta charset="utf-8">
@@ -53,6 +53,7 @@
             </div>
         </div>
     </section>
+    <div class="inner">
     <section class="banner">
         <div class="container-fluid">
             <div class="row">
@@ -189,6 +190,7 @@
             </div>
         </div>
     </section>
+    </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -201,6 +203,7 @@
     <script src="/bower_components/headroom.js/dist/jQuery.headroom.js"></script>
     <script src="/bower_components/jquery.event.move/js/jquery.event.move.js"></script>
     <script src="/bower_components/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+    <script src="/bower_components/dropload/dist/dropload.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.) scripts/plugins.js -->
@@ -235,7 +238,20 @@
             autoplay: 5000
         });
 
-        $(".hot-tags").headroom();
+        $(".hot-tags").headroom({
+            scroller: $('.inner')[0]
+        });
+
+        $('.inner').dropload({
+            loadUpFn: function(me) {
+                // console.log('loadDown')
+                // me.resetload();
+                window.setTimeout(function(){
+                    location.reload();
+                }, 1000);
+                
+            }
+        });
     });
     </script>
 </body>
